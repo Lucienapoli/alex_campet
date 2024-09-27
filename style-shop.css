@@ -1,0 +1,61 @@
+:root {
+    --background-color: radial-gradient(circle, rgba(254, 178, 0, 1) 0%, rgba(246, 195, 6, 1) 50%, rgba(255, 192, 0, 1) 100%);
+    --color-font1: white;
+    --color-font2: #ffb300;
+}
+
+/* Main elements of the page */
+
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 59% 41% 73% 27% / 30% 51% 49% 70% ;
+}
+
+button {
+    width: 100px;
+    background: var(--background-color);
+    border: solid 1px var(--color-font2);
+    
+    
+}
+
+button a {
+    color: var(--color-font1);
+    font-size: 15px;
+}
+
+/* Shop */
+
+.shop-section {
+    margin: 20px 0;
+}
+.shop, 
+.shop-landscape {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+}
+
+.shop-images {
+    border: solid 2px var(--color-font2);
+    border-radius: 59% 41% 73% 27% / 30% 51% 49% 70% ;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.shop-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
